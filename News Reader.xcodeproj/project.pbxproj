@@ -12,10 +12,10 @@
 		1847B4631FFC356F00FC4C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1847B4611FFC356F00FC4C3D /* Main.storyboard */; };
 		1847B4651FFC356F00FC4C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1847B4641FFC356F00FC4C3D /* Assets.xcassets */; };
 		1847B4681FFC356F00FC4C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1847B4661FFC356F00FC4C3D /* LaunchScreen.storyboard */; };
+		184F78C01FFC7074004B8FF7 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F78BF1FFC7074004B8FF7 /* WebviewViewController.swift */; };
 		18F957FD1FFC470200B4EAC5 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F957FC1FFC470200B4EAC5 /* ArticleCell.swift */; };
 		18F957FF1FFC484600B4EAC5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F957FE1FFC484600B4EAC5 /* Article.swift */; };
 		18F958011FFC4A6200B4EAC5 /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F958001FFC4A6200B4EAC5 /* ImageDownload.swift */; };
-		18F958031FFC4A9A00B4EAC5 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F958021FFC4A9A00B4EAC5 /* WebviewViewController.swift */; };
 		D754BB755C1AA18B288A482A /* Pods_News_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F07CD27B676C44F1C9C8AB4 /* Pods_News_Reader.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,10 +28,10 @@
 		1847B4641FFC356F00FC4C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1847B4671FFC356F00FC4C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1847B4691FFC356F00FC4C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184F78BF1FFC7074004B8FF7 /* WebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 		18F957FC1FFC470200B4EAC5 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		18F957FE1FFC484600B4EAC5 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		18F958001FFC4A6200B4EAC5 /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
-		18F958021FFC4A9A00B4EAC5 /* WebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 		468B9BA90CE4027D2E1F0FA9 /* Pods-News Reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News Reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News Reader/Pods-News Reader.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2C122B19814457A7B7F792 /* Pods-News Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-News Reader/Pods-News Reader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 				18F957FC1FFC470200B4EAC5 /* ArticleCell.swift */,
 				18F957FE1FFC484600B4EAC5 /* Article.swift */,
 				18F958001FFC4A6200B4EAC5 /* ImageDownload.swift */,
-				18F958021FFC4A9A00B4EAC5 /* WebviewViewController.swift */,
+				184F78BF1FFC7074004B8FF7 /* WebviewViewController.swift */,
 				1847B4611FFC356F00FC4C3D /* Main.storyboard */,
 				1847B4641FFC356F00FC4C3D /* Assets.xcassets */,
 				1847B4661FFC356F00FC4C3D /* LaunchScreen.storyboard */,
@@ -233,7 +233,7 @@
 				18F957FF1FFC484600B4EAC5 /* Article.swift in Sources */,
 				1847B4601FFC356F00FC4C3D /* ViewController.swift in Sources */,
 				1847B45E1FFC356E00FC4C3D /* AppDelegate.swift in Sources */,
-				18F958031FFC4A9A00B4EAC5 /* WebviewViewController.swift in Sources */,
+				184F78C01FFC7074004B8FF7 /* WebviewViewController.swift in Sources */,
 				18F957FD1FFC470200B4EAC5 /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

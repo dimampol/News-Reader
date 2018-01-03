@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--News Reader-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="News_Reader" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,60 +29,60 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="174" id="b7o-KT-GCt" customClass="ArticleCell" customModule="News_Reader" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="174"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="161" id="b7o-KT-GCt" customClass="ArticleCell" customModule="News_Reader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7o-KT-GCt" id="u6E-S4-fTs">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="173.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="160.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-kg-Yut">
-                                                    <rect key="frame" x="15" y="22" width="130" height="130"/>
+                                                    <rect key="frame" x="15" y="15" width="130" height="130"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="130" id="Ck7-uV-Y2N"/>
                                                         <constraint firstAttribute="width" constant="130" id="zdb-pw-M6s"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Title Title Title Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmT-qV-daa">
-                                                    <rect key="frame" x="153" y="22" width="118" height="57.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Title Title Title Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmT-qV-daa">
+                                                    <rect key="frame" x="153" y="15" width="118" height="54"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Description Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFm-Ql-pav">
-                                                    <rect key="frame" x="153" y="87" width="118" height="50.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Description Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFm-Ql-pav">
+                                                    <rect key="frame" x="153" y="76.5" width="118" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-D9-4XN">
-                                                    <rect key="frame" x="235.5" y="146" width="43.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dO-aX-8lf">
+                                                    <rect key="frame" x="241" y="135.5" width="38" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rsK-D9-4XN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oFm-Ql-pav" secondAttribute="bottom" constant="5" id="650-BK-UI2"/>
                                                 <constraint firstItem="WmT-qV-daa" firstAttribute="leading" secondItem="b5I-kg-Yut" secondAttribute="trailing" constant="8" id="6Rl-D9-c53"/>
-                                                <constraint firstItem="rsK-D9-4XN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u6E-S4-fTs" secondAttribute="leadingMargin" id="7Ra-Pm-j7N"/>
+                                                <constraint firstItem="6dO-aX-8lf" firstAttribute="trailing" secondItem="u6E-S4-fTs" secondAttribute="trailingMargin" id="AhO-Tj-laO"/>
                                                 <constraint firstItem="b5I-kg-Yut" firstAttribute="leading" secondItem="u6E-S4-fTs" secondAttribute="leadingMargin" id="CAf-NB-cv5"/>
                                                 <constraint firstItem="b5I-kg-Yut" firstAttribute="centerY" secondItem="u6E-S4-fTs" secondAttribute="centerY" id="Ddf-y9-d6k"/>
+                                                <constraint firstItem="6dO-aX-8lf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u6E-S4-fTs" secondAttribute="leadingMargin" id="EX7-60-CBo"/>
                                                 <constraint firstItem="WmT-qV-daa" firstAttribute="top" secondItem="b5I-kg-Yut" secondAttribute="top" id="Ic5-iu-gU6"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="oFm-Ql-pav" secondAttribute="trailing" constant="8" id="Ipo-M6-StJ"/>
+                                                <constraint firstItem="6dO-aX-8lf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oFm-Ql-pav" secondAttribute="bottom" constant="5" id="Mz4-81-svX"/>
                                                 <constraint firstItem="oFm-Ql-pav" firstAttribute="leading" secondItem="b5I-kg-Yut" secondAttribute="trailing" constant="8" id="O12-zM-jAm"/>
-                                                <constraint firstItem="rsK-D9-4XN" firstAttribute="bottom" secondItem="u6E-S4-fTs" secondAttribute="bottomMargin" id="O2x-hY-Pqt"/>
                                                 <constraint firstItem="oFm-Ql-pav" firstAttribute="top" secondItem="WmT-qV-daa" secondAttribute="bottom" constant="8" id="U90-qf-zNI"/>
-                                                <constraint firstItem="rsK-D9-4XN" firstAttribute="trailing" secondItem="u6E-S4-fTs" secondAttribute="trailingMargin" id="e8K-yl-b6Z"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="WmT-qV-daa" secondAttribute="trailing" constant="8" id="epb-FP-I3u"/>
+                                                <constraint firstItem="6dO-aX-8lf" firstAttribute="bottom" secondItem="u6E-S4-fTs" secondAttribute="bottomMargin" id="rz4-JH-0V3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="articleDescriptionLabel" destination="oFm-Ql-pav" id="cYu-Q3-llK"/>
                                             <outlet property="articleImage" destination="b5I-kg-Yut" id="P9X-lb-b8C"/>
                                             <outlet property="articleTitleLabel" destination="WmT-qV-daa" id="7Wg-8y-QOE"/>
-                                            <outlet property="authorLabel" destination="rsK-D9-4XN" id="sNn-WN-g4e"/>
-                                            <segue destination="kpF-ss-las" kind="show" id="fNB-pE-czr"/>
+                                            <outlet property="authorLabel" destination="6dO-aX-8lf" id="2GW-bj-f2X"/>
+                                            <segue destination="kpF-ss-las" kind="show" identifier="MasterToWeb" trigger="accessoryAction" id="2IC-VJ-81F"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,7 +115,7 @@
                                                     <action selector="menuButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7lo-HM-blH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6g-as-TeW">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6g-as-TeW">
                                                 <rect key="frame" x="24.5" y="91.5" width="84" height="46"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="CBS News">
@@ -182,9 +182,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FJ-NC-z43">
-                                                <rect key="frame" x="18.5" y="366.5" width="96" height="46"/>
+                                                <rect key="frame" x="27.5" y="366.5" width="78" height="46"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                                <state key="normal" title="TechCrunch">
+                                                <state key="normal" title="TalkSport">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -193,9 +193,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rR-2X-udV">
-                                                <rect key="frame" x="25.5" y="412.5" width="82" height="45.5"/>
+                                                <rect key="frame" x="6" y="412.5" width="121" height="45.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                                <state key="normal" title="Techradar">
+                                                <state key="normal" title="The Economist">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -204,9 +204,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBH-vd-7Wn">
-                                                <rect key="frame" x="46" y="458" width="41" height="46"/>
+                                                <rect key="frame" x="41" y="458" width="51" height="46"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                                <state key="normal" title="Time">
+                                                <state key="normal" title="Wired">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -236,7 +236,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="News Reader" id="Ptu-UQ-NfE">
+                    <navigationItem key="navigationItem" id="Ptu-UQ-NfE">
                         <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="1wy-wh-Vzb">
                             <connections>
                                 <action selector="openMenu:" destination="BYZ-38-t0r" id="14e-LV-a22"/>
@@ -290,6 +290,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5zB-dp-23y"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="7dd-X6-2Bb" id="4dY-uN-mxv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drG-eg-cpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

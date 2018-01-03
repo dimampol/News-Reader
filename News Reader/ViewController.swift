@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     var showMenu = false
-    let sourcesArray = ["bbc-news", "business-insider", "cbs-news", "cnbc", "financial-post", "independent", "le-monde", "nhl-news", "techcrunch", "techradar", "time"]
+    let sourcesArray = ["bbc-news", "business-insider", "cbs-news", "cnbc", "financial-post", "independent", "le-monde", "nhl-news", "talksport", "the-economist", "wired"]
     var articlesArray: [Article]? = []
     
     override func viewDidLoad() {
@@ -29,7 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        fetchArticles(fromSource: "techcrunch")
+        fetchArticles(fromSource: "cbs-news")
+        navigationItem.title = "CBS News"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
