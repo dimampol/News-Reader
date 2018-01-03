@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import SVProgressHUD
 
 class WebviewViewController: UIViewController, WKUIDelegate {
     
@@ -31,7 +32,15 @@ class WebviewViewController: UIViewController, WKUIDelegate {
             let articleURL = article.articleURL
             let urlRequest = URLRequest(url: URL(string: articleURL!)!)
             webView.load(urlRequest)
+            
+            if webView.isLoading{
+                SVProgressHUD.setDefaultMaskType(.black)
+                SVProgressHUD.show(withStatus: "Loading...")
+                SVProgressHUD.dismiss(withDelay: 12) //In case of slow Internet and if loading takes too long to allow viewing partially loaded content
+            }
+//            else{
+//                SVProgressHUD.dismiss() // For fairly fast Internet
+//            }
         }
     }
-
 }
