@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tableViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet var menuButtons: [UIButton]!
     
     
@@ -28,6 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         fetchArticles(fromSource: "cbs-news")
         navigationItem.title = "CBS News"
@@ -113,6 +117,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func closeMenu(){
         
         leadingConstraint.constant = -150
+        tableViewTrailingConstraint.constant = 0
         
         UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
@@ -124,7 +129,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if !showMenu{
             leadingConstraint.constant = 0
-            
+            tableViewTrailingConstraint.constant = 140
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
